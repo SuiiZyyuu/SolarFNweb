@@ -1,4 +1,4 @@
-/* Réinitialiser les marges et les paddings */
+/* Réinitialisation des marges et paddings */
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +33,11 @@ html, body {
     text-align: center;
     color: white;
     z-index: 1;
+    padding: 20px;
+    max-width: 90%; /* Pour s'adapter à de petits écrans */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6); /* Ajout d'un fond semi-transparent pour la lisibilité */
+    border-radius: 10px;
 }
 
 /* Style du compte à rebours */
@@ -41,6 +46,7 @@ html, body {
     justify-content: center;
     gap: 20px;
     font-size: 2rem;
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur de petits écrans */
 }
 
 #countdown div {
@@ -52,4 +58,37 @@ html, body {
 #countdown span {
     font-size: 4rem;
     font-weight: bold;
+}
+
+/* Responsive design pour petits écrans */
+@media (max-width: 768px) {
+    #countdown {
+        font-size: 1.5rem; /* Réduit la taille du texte sur tablette */
+        gap: 15px; /* Réduit l'espacement */
+    }
+
+    #countdown span {
+        font-size: 3rem; /* Taille du compte à rebours ajustée */
+    }
+}
+
+/* Responsive pour très petits écrans (mobiles) */
+@media (max-width: 480px) {
+    .content {
+        padding: 15px; /* Réduction du padding sur mobile */
+    }
+
+    #countdown {
+        flex-direction: column; /* Aligne les éléments verticalement */
+        font-size: 1.2rem; /* Réduit davantage la taille du texte */
+        gap: 10px;
+    }
+
+    #countdown div {
+        padding: 15px; /* Réduit la taille des divs */
+    }
+
+    #countdown span {
+        font-size: 2.5rem; /* Ajuste la taille des chiffres */
+    }
 }

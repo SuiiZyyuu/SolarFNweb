@@ -1,0 +1,55 @@
+/* Réinitialiser les marges et les paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Appliquer une hauteur et une largeur à 100% */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Arrière-plan flou */
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.discordapp.com/attachments/1269396194128433234/1289957380217638975/fortnite-season-4-chapter-2-nmi1iq9rsvshwcss.jpg?ex=66fab5ed&is=66f9646d&hm=2c0f27122619c062d06a5f8a7ff1efef1afa4d607803168dfd032da3c28334a0&') no-repeat center center/cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Conteneur du contenu */
+.content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* Style du compte à rebours */
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+#countdown div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#countdown span {
+    font-size: 4rem;
+    font-weight: bold;
+}

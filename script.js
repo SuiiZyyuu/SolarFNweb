@@ -2,9 +2,9 @@
 let countdownDate = localStorage.getItem("countdownDate");
 
 if (!countdownDate) {
-    // Définir la date de fin du compte à rebours (5 jours à partir de maintenant)
-    countdownDate = new Date();
-    countdownDate.setDate(countdownDate.getDate() + 5);
+    // Utiliser l'heure de Paris (UTC+2 ou UTC+1 selon la saison)
+    countdownDate = new Date("2023-10-04T18:00:00+02:00"); // Spécifier le décalage horaire en France (CEST, UTC+2)
+
     localStorage.setItem("countdownDate", countdownDate);
 } else {
     countdownDate = new Date(countdownDate);

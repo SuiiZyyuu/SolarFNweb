@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://cdn.discordapp.com/attachments/1269396194128433234/1289957380217638975/fortnite-season-4-chapter-2-nmi1iq9rsvshwcss.jpg?ex=66fffbed&is=66feaa6d&hm=2ae4e9c8b9fc5be64d79cb5842968de53b6032e12b1a5b540020ad0dc03b776e&') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  #countdown-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #countdown {
+    font-size: 2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #trailer-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #trailer-container.show {
+    opacity: 1;
+  }
+  

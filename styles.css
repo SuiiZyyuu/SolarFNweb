@@ -1,0 +1,130 @@
+/* Styles globaux */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Animation d'ouverture */
+#intro-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #006199, #006199);
+  color: white;
+  text-align: center;
+  animation: slide-out 3s forwards;
+}
+
+#intro-animation h1.logo {
+  font-size: 3rem;
+  animation: scale-up 1.5s ease-in-out;
+}
+
+#intro-animation .tagline {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fade-in 1.5s 1s forwards;
+}
+
+@keyframes slide-out {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-100%); }
+}
+
+@keyframes scale-up {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Contenu principal caché */
+main {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+main.visible {
+  opacity: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li {
+  font-size: 1rem;
+}
+
+section {
+  padding: 20px;
+}
+
+.product {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.product img {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product button {
+  background: #0088a0;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product button:hover {
+  background: #00456d;
+}
+
+  

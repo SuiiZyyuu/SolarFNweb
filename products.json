@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "name": "T-shirt Blanc",
+      "price": 25,
+      "images": {
+        "default": "/assets/images/tshirt-white.jpg",
+        "red": "/assets/images/tshirt-red.jpg",
+        "blue": "/assets/images/tshirt-blue.jpg"
+      },
+      "colors": ["default", "red", "blue"]
+    },
+    {
+      "id": 2,
+      "name": "Sweat à capuche",
+      "price": 45,
+      "images": {
+        "default": "/assets/images/sweat-grey.jpg",
+        "black": "/assets/images/sweat-black.jpg",
+        "green": "/assets/images/sweat-green.jpg"
+      },
+      "colors": ["default", "black", "green"]
+    }
+  ]
+  
